@@ -32,3 +32,5 @@ systemctl restart asterisk
 systemctl enable asterisk
 apt install git
 git clone https://github.com/Edgar-Asterisk/archivos.git
+cd archivos/
+reboot
