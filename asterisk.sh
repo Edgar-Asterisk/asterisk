@@ -31,4 +31,4 @@ echo "rungroup = asterisk" >> /etc/asterisk/asterisk.conf
 systemctl restart asterisk
 systemctl enable asterisk
 apt install git
-git clone 
+git clone https://github.com/Edgar-Asterisk/archivos.git
