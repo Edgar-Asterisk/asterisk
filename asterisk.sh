@@ -32,5 +32,14 @@ systemctl restart asterisk
 systemctl enable asterisk
 apt install git
 git clone https://github.com/Edgar-Asterisk/archivos.git
+rm -rf /etc/asterisk/http.conf
+rm -rf /etc/asterisk/extensions.conf
+rm -rf /etc/asterisk/pjsip.conf
+rm -rf /etc/asterisk/rtp.conf
 cd archivos/
+cp http.conf /etc/asterisk/
+cp extensions.conf /etc/asterisk/
+cp pjsip.conf /etc/asterisk/
+cp rtp.conf /etc/asterisk/
+chown asterisk:asterisk /etc/asterisk/*
 reboot
